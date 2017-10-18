@@ -1,0 +1,19 @@
+{
+  "name": "statistic-check.rf",
+  "version": "1.0.20",
+  "description": "check statistic at run time for each microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./tests/test.js"
+  },
+  "author": "maty zisserman",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.1",
+    "ioredis-timeout": "^1.2.0",
+    "prerequisite.rf": "^1.0.0",
+    "pub-sub-adapter.rf": "^1.0.0",
+    "redis-utils.rf": "^1.0.0",
+    "uuid": "^3.0.1"
+  }
+}

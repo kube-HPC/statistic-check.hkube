@@ -1,0 +1,118 @@
+{
+  "_args": [
+    [
+      "systeminformation",
+      "/home/matyz/system"
+    ]
+  ],
+  "_from": "systeminformation@latest",
+  "_id": "systeminformation@3.17.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/systeminformation",
+  "_nodeVersion": "7.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/systeminformation-3.17.0.tgz_1487490907591_0.17935994383879006"
+  },
+  "_npmUser": {
+    "email": "hildebrandt@plus-innovations.com",
+    "name": "plusinnovations"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "systeminformation",
+    "raw": "systeminformation",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://greenape.ddns.net/npm/systeminformation/-/systeminformation-3.17.0.tgz",
+  "_shasum": "d8010335d5ba4a10cf9800b1b8ab23b5f8a613fd",
+  "_shrinkwrap": null,
+  "_spec": "systeminformation",
+  "_where": "/home/matyz/system",
+  "author": {
+    "email": "hildebrandt@plus-innovations.com",
+    "name": "Sebastian Hildebrandt",
+    "url": "https://plus-innovations.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sebhildebrandt/systeminformation/issues"
+  },
+  "dependencies": {},
+  "description": "Simple system and OS information library",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d8010335d5ba4a10cf9800b1b8ab23b5f8a613fd",
+    "tarball": "http://greenape.ddns.net/npm/systeminformation/-/systeminformation-3.17.0.tgz"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "gitHead": "07c772a1479023984098bc80a42b29545ed99e94",
+  "gypfile": true,
+  "homepage": "https://github.com/sebhildebrandt/systeminformation",
+  "keywords": [
+    "battery",
+    "block devices",
+    "cpu",
+    "cpuload",
+    "diskio",
+    "display",
+    "docker",
+    "docker processes",
+    "docker stats",
+    "file system",
+    "fsstats",
+    "graphic card",
+    "graphic controller",
+    "graphics",
+    "internet",
+    "linux",
+    "memory",
+    "monitor",
+    "monitoring",
+    "netstats",
+    "network",
+    "network connections",
+    "os",
+    "osx",
+    "processes",
+    "sysinfo",
+    "system information",
+    "users",
+    "windows"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "maintainers": [
+    {
+      "name": "plusinnovations",
+      "email": "hildebrandt@plus-innovations.com"
+    }
+  ],
+  "name": "systeminformation",
+  "optionalDependencies": {},
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebhildebrandt/systeminformation.git"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.17.0"
+}

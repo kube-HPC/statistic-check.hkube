@@ -1,0 +1,27 @@
+stages:
+  - test
+  - version
+  - publish
+version:
+  stage: version
+  only:
+    - master
+  except:
+    - tags
+    - triggers
+  script:
+    - export CI_PUSH_REPO=`echo $CI_BUILD_REPO | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#' | perl -pe 's/:gitlab\//:\//'`
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$CI_KEY")
+    - export TMP_BRANCH_NAME=ci_processing_$CI_BUILD_ID
+    - git checkout -b $TMP_BRANCH_NAME
+    - git remote set-url --push origin "$CI_PUSH_REPO"
+    - npm version patch -m "$(git log -1 --pretty=%B) .... bump version [skip ci]"
+    - git push origin $TMP_BRANCH_NAME:${CI_BUILD_REF_NAME} --follow-tags
+    - curl -X POST -F "token=a4a1c72f901ff89f36e65ad0246e5e" -F "ref=$(git describe --abbrev=0 --tags)" "http://gitlab.rms/gitlab/api/v3/projects/$CI_PROJECT_ID/trigger/builds"
+publish:
+  stage: publish
+  only:
+    - triggers
+  script:
+    - npm --registry=http://cir-srv01:4873 publish .
