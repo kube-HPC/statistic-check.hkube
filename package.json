@@ -1,5 +1,5 @@
 {
-  "name": "statistic-check.rf",
+  "name": "statistic-check.hkube",
   "version": "1.0.20",
   "description": "check statistic at run time for each microservice",
   "main": "index.js",
