@@ -9,7 +9,7 @@
   "author": "maty zisserman",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.0.1",
+    "async": "^3.2.2",
     "ioredis-timeout": "^1.2.0",
     "prerequisite.rf": "^1.0.0",
     "pub-sub-adapter.rf": "^1.0.0",
